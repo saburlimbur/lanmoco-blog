@@ -7,19 +7,26 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // untuk handle ke arah section article dari navbar
+
+
+  function handleAboutClick() {
+    scrollToElement('about')
+  }
+
   function handleArticleClick() {
     scrollToElement('article');
   }
 
-  // untuk handle ke arah section contact dari navbar
   function handleContactClick() {
     scrollToElement('contact');
   }
 
+
+  const about = document.getElementById('about')
   const article = document.getElementById('article');
   const contact = document.getElementById('contact');
 
+  about.addEventListener('about', handleAboutClick);
   article.addEventListener('click', handleArticleClick);
   contact.addEventListener('click', handleContactClick);
 });
