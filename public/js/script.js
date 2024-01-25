@@ -7,10 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-
-
   function handleAboutClick() {
-    scrollToElement('about')
+    scrollToElement('about');
   }
 
   function handleArticleClick() {
@@ -21,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     scrollToElement('contact');
   }
 
-
-  const about = document.getElementById('about')
+  const about = document.getElementById('about');
   const article = document.getElementById('article');
   const contact = document.getElementById('contact');
 
@@ -93,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ini utk menyembunyikan semua artikel ketika setiap filter dipanggil akan menjadi display = none
-  
+
   function hideAllArticles() {
     spiritualArticles.forEach(function (article) {
       article.style.display = 'none';

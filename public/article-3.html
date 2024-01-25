@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="img/logo.svg" ; />
+
+    <title>Lanmoco Blog</title>
+    <!-- Include Alpine.js and Tailwind CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+    
+    <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
+      <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+        <!-- Heading Article -->
+        <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
+          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Inovasi yang Mengejutkan: Menyelusuri Jejak Teknologi Terkini yang Merubah Paradigma</h1>
+        </div>
+        <!-- End Heading Article -->
+    
+        <!-- Content -->
+        <div class="lg:-mx-6 py-10 flex flex-col items-center">
+          <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-3.jpg" alt="" />
+    
+          <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
+            <p class="mt-6 text-gray-500 dark:text-gray-400">
+                Dari kemajuan kecerdasan buatan hingga revolusi energi terbarukan, artikel ini membahas perubahan mendasar dalam cara kita berinteraksi dengan dunia sekitar. Kemajuan teknologi telah menjadi pendorong utama di balik perubahan ini, mengubah tidak hanya dinamika industri, tetapi juga pola pikir dan gaya hidup masyarakat secara menyeluruh. Kecerdasan buatan, misalnya, telah mengubah cara kita bekerja, belajar, dan bahkan berinteraksi dengan lingkungan sekitar. <br>
+
+               <br> Perkembangan dalam teknologi energi terbarukan juga telah mengubah paradigma kita terhadap sumber daya energi dan lingkungan. Dengan meningkatnya kesadaran akan dampak negatif perubahan iklim dan keterbatasan sumber daya alam, energi terbarukan seperti tenaga surya dan angin telah menjadi pilihan yang semakin populer dan terjangkau dalam memenuhi kebutuhan energi global. Ini tidak hanya membuka peluang baru dalam bidang ekonomi dan industri, tetapi juga memberikan harapan akan masa depan yang lebih berkelanjutan dan ramah lingkungan. <br>
+                
+               <br> Namun, perubahan ini juga membawa tantangan baru yang perlu diatasi. Salah satunya adalah tantangan terkait dengan keamanan dan privasi dalam penggunaan kecerdasan buatan, serta tantangan teknis dan infrastruktur dalam mengadopsi energi terbarukan secara luas. Selain itu, adopsi teknologi ini juga memunculkan pertanyaan etis dan sosial tentang dampaknya terhadap lapangan pekerjaan, kesenjangan ekonomi, dan hubungan antarmanusia. <br>
+                
+               <br> Dengan demikian, sementara artikel ini menyoroti harapan dan potensi inovasi teknologi dalam membawa perubahan positif, kita juga harus tetap waspada terhadap tantangan dan risiko yang terkait. Penting bagi kita untuk terus beradaptasi dan berkembang dalam menghadapi perubahan ini, serta memastikan bahwa inovasi teknologi digunakan secara bijaksana dan bertanggung jawab untuk kebaikan bersama. Hanya dengan demikian kita dapat memanfaatkan sepenuhnya potensi masa depan yang penuh harapan dan tak terduga yang telah terbuka lebar oleh perkembangan teknologi ini.
+          </div>
+        </div>
+        <!-- End Content -->
+    
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start mb-8">
+          <button
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+            <span> Go back</span>
+          </button>
+        </div>
+        <!-- End Button -->
+      </div>
+    </section>
+    
+  </body>
+</html>

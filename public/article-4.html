@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="img/logo.svg" ; />
+
+    <title>Lanmoco Blog</title>
+    <!-- Include Alpine.js and Tailwind CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+    
+    <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
+      <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+
+        <!-- Heading Article -->
+        <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
+          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Di Tengah Dentuman Hardcore Punk: Menelusuri Semangat dan Revolusi Suara Subkultur</h1>
+        </div>
+        <!-- End Heading Article -->
+    
+        <!-- Content -->
+        <div class="lg:-mx-6 py-10 flex flex-col items-center">
+          <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-4.jpeg" alt="" />
+    
+          <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
+            <p class="mt-6 text-gray-500 dark:text-gray-400">
+                Dalam dentuman keras Hardcore Punk, muncul energi revolusioner yang menggema dalam keberanian, protes, dan semangat murni. Artikel ini merinci dinamika eksploratif dan semangat subkultur Hardcore Punk, membedah akar ideologis dan peran sentralnya dalam mewakili suara perlawanan dan ekspresi autentik. <br>
+
+               <br> Hardcore Punk bukan sekadar genre musik, tetapi juga sebuah gerakan sosial dan budaya yang lahir sebagai reaksi terhadap ketidakpuasan terhadap norma-norma sosial dan politik yang ada. Subkultur ini muncul sebagai medium ekspresi bagi generasi yang merasa terpinggirkan dan tidak diwakili dalam mainstream budaya. Dengan lirik yang kontroversial dan ritme yang enerjik, musik Hardcore Punk menjadi sarana untuk menyuarakan ketidakpuasan, ketegangan, dan kemarahan terhadap ketidakadilan sosial dan politik. <br>
+                
+               <br> Hardcore Punk juga memiliki akar ideologis yang kuat, dengan nilai-nilai seperti otonomi, kesetiaan komunitas, dan penolakan terhadap otoritas yang dipromosikan. Gerakan ini menekankan pentingnya pengalaman langsung dan partisipasi aktif dalam menentukan arah hidup dan tindakan individu. Selain itu, Hardcore Punk juga menolak norma-norma konvensional dalam musik dan gaya hidup, mengedepankan sikap anti-komersialisme dan antikonformitas. <br>
+                 
+               <br> Namun, di balik semangatnya yang revolusioner, Hardcore Punk juga sering kali dikritik karena kekerasan dan perilaku destruktif yang terkait dengan subkultur ini. Meskipun demikian, pengaruh Hardcore Punk dalam budaya populer dan sosial tidak dapat dipungkiri. Gerakan ini telah memberikan inspirasi bagi banyak individu untuk menyuarakan ketidakpuasan mereka dan berpartisipasi dalam perubahan sosial yang positif. <br>
+                
+               <br> Dengan demikian, artikel ini bertujuan untuk menyelidiki lebih dalam tentang dinamika eksploratif dan semangat subkultur Hardcore Punk. Dengan menganalisis akar ideologis dan peran sentralnya dalam mewakili suara perlawanan dan ekspresi autentik, kita dapat memahami dampak yang lebih luas dari gerakan ini dalam membentuk budaya dan masyarakat kontemporer.
+            </p>
+          </div>
+        </div>
+        <!-- End Content -->
+    
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start mb-8">
+          <button
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+            <span> Go back</span>
+          </button>
+        </div>
+        <!-- End Button -->
+      </div>
+    </section>
+    
+  </body>
+</html>
