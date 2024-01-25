@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="img/logo.svg" ; />
+
+    <title>Lanmoco Blog</title>
+    <!-- Include Alpine.js and Tailwind CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+
+    <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
+      <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+
+        <!-- Heading Article -->
+        <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
+          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Melambung Tinggi dan Beraksi: Menggila di Udara dengan Otoped, Scooter Freestyle yang Makin Greget!</h1>
+        </div>
+        <!-- End Heading Article -->
+    
+        <!-- Content -->
+        <div class="lg:-mx-6 py-10 flex flex-col items-center">
+          <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-8.jpg" alt="" />
+    
+          <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
+            <p class="mt-6 text-gray-500 dark:text-gray-400">
+                Scooter Freestyle tidak hanya sebuah atraksi biasa di arena, melainkan sebuah seni gerak bebas yang menakjubkan dan menginspirasi. Di balik setiap trik dan gerakan yang mencengangkan, terdapat dedikasi, latihan keras, dan keberanian yang mengagumkan. Para rider berpengalaman dengan keterampilan yang luar biasa mampu menciptakan koreografi yang menakjubkan di udara, menggabungkan teknik, kreativitas, dan ekspresi pribadi dengan sempurna. <br>
+
+               <br> Dalam obrolan mendalam dengan para ahli dan praktisi Scooter Freestyle, kita akan menyingkap lebih jauh esensi dari kegilaan di atas otoped ini. Mereka akan berbagi pandangan dan pengalaman mereka tentang bagaimana Scooter Freestyle tidak hanya tentang melakukan trik yang spektakuler, tetapi juga tentang mengekspresikan diri secara bebas dan menciptakan karya seni yang unik. Dari filosofi di balik setiap gerakan hingga tantangan yang dihadapi dalam menghadirkan pertunjukan yang luar biasa, pembaca akan mendapatkan wawasan yang mendalam tentang dunia yang bersemangat ini. <br>
+                
+               <br> Artikel ini juga akan membawa pembaca dalam perjalanan langsung ke dunia Scooter Freestyle yang penuh warna dan kegembiraan. Dengan melibatkan pembaca dalam cerita-cerita yang menginspirasi dan pengalaman yang mendalam, kita akan merasakan sendiri sensasi seru dan kekinian yang ditawarkan oleh olahraga ini. Dari latihan di tempat latihan hingga aksi panggung di kompetisi, kita akan merasakan kegembiraan dan kepuasan yang hanya bisa dirasakan oleh mereka yang terlibat secara langsung dalam dunia Scooter Freestyle. Saya ingin membantu lebih?
+            </p>
+          </div>
+        </div>
+        <!-- End Content -->
+    
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start mb-8">
+          <button
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+            <span> Go back</span>
+          </button>
+        </div>
+        <!-- End Button -->
+      </div>
+    </section>
+    
+  </body>
+</html>

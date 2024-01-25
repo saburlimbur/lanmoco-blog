@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="images/png" sizes="32x32" href="img/logo.svg" ; />
+
+    <title>Lanmoco Blog</title>
+    <!-- Include Alpine.js and Tailwind CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
+  </head>
+  <body>
+
+    <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
+      <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+
+        <!-- Heading Article -->
+        <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
+          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Menjelajahi Nostalgia Visual: Kecantikan Fotografi dalam Kekerabatan dengan Kamera Film Analog</h1>
+        </div>
+        <!-- End Heading Article -->
+    
+        <!-- Content -->
+        <div class="lg:-mx-6 py-10 flex flex-col items-center">
+          <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-7.jpg" alt="" />
+    
+          <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
+            <p class="mt-6 text-gray-500 dark:text-gray-400">
+                Dalam perjalanan eksplorasi yang memukau, kita akan menyelami kedalaman teknologi klasik yang terus mempesona di tengah gemerlap kemajuan fotografi digital yang terus berkembang pesat. Artikel ini mengajak pembaca untuk terlibat dalam perjalanan visual yang menginspirasi, membawa mereka melalui narasi mendalam yang memikat dan elemen-elemen yang memukau. <br>
+
+               <br> Dengan setiap langkah perjalanan ini, kita akan meresapi keindahan seni fotografi tradisional yang terpatri dalam setiap karya kamera film analog. Kita akan memahami daya tarik unik yang dimiliki oleh medium ini, mengajak pembaca untuk mencintai setiap detail dari kekayaan visual yang diciptakan oleh kamera film analog yang timeless ini. <br>
+                
+               <br> Dalam eksplorasi yang mendalam ini, kita akan memahami keunggulan dan pesona kamera film analog dalam mengabadikan momen-momen berharga dengan kualitas yang khas. Kita akan menelusuri jejak sejarah fotografi, mengeksplorasi teknik-teknik klasik yang masih relevan hingga saat ini, dan merasakan sentuhan nostalgis yang disuguhkan oleh medium yang timeless ini. Melalui artikel ini, pembaca akan dibawa dalam perjalanan yang membangkitkan apresiasi terhadap seni fotografi tradisional, serta memperdalam pemahaman akan nilai-nilai estetika yang terkandung di dalamnya.
+            </p>
+          </div>
+        </div>
+        <!-- End Content -->
+    
+        <!-- Button -->
+        <div class="flex justify-center lg:justify-start mb-8">
+          <button
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+            </svg>
+            <span> Go back</span>
+          </button>
+        </div>
+        <!-- End Button -->
+      </div>
+    </section>
+    
+  </body>
+</html>
