@@ -11,28 +11,25 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
   </head>
   <body>
-    <section class="bg-gray-900 dark:bg-white flex justify-center items-center min-h-screen">
+    <section class="from-gray-900 via-gray-800 dark:from-white dark:via-white flex justify-center items-center min-h-screen">
       <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
-        
+
         <!-- Button -->
         <div class="flex lg:justify-start mb-8 py-8">
-          <button
-            title="left arrow"
-            class="p-2 text-gray-700 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-100 hover:bg-gray-800"
-            x-data="{ goBack: function() { window.history.back(); } }"
-            @click="goBack"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 25 25" stroke="currentColor" stroke-width="1">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
+          <button title="left arrow" class="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
+          x-data="{ goBack: function() { window.history.back(); } }"
+          @click="goBack">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 25 25" stroke="currentColor" stroke-width="1">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
           </button>
         </div>
-
+        
         <!-- End Button-->
 
         <!-- Heading Article -->
         <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
-          <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl lg:w-96 mx-auto">Melintasi Jalan Jalaluddin Rumi: Eksplorasi Kehidupan dan Puisi Sang Sufi</h1>
+          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Melintasi Jalan Jalaluddin Rumi: Eksplorasi Kehidupan dan Puisi Sang Sufi</h1>
         </div>
         <!-- End Heading Article -->
 
@@ -41,7 +38,7 @@
           <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-1.jpeg" alt="" />
 
           <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
-            <p class="mt-6 text-gray-400 dark:text-gray-500">
+            <p class="mt-6 text-gray-500 dark:text-gray-400">
               Jalaluddin Rumi, seorang penyair Sufi yang meninggalkan warisan puisi puitis yang mempesona. Lahir di Persia pada abad ke-13 dan kemudian menetap di Konya, Turki, Rumi dikenal karena karyanya yang memancarkan pesan cinta,
               kebijaksanaan, dan spiritualitas yang mendalam. Salah satu karyanya yang paling terkenal adalah "Masnavi," sebuah karya epik yang menggambarkan perjalanan spiritual manusia dalam mencari kesatuan dengan Tuhan. <br />
 
