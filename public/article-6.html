@@ -11,50 +11,60 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
   </head>
   <body>
-
     <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
       <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+
+        <!-- Button -->
+        <div class="flex lg:justify-start mb-8 py-8">
+          <button
+            title="left arrow"
+            class="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 25 25" stroke="currentColor" stroke-width="1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- End Button-->
 
         <!-- Heading Article -->
         <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
           <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Dalam Menyongsong Era Keberadaan Kecerdasan Buatan: Apakah Profesi Programmer Bakal Terancam?</h1>
         </div>
         <!-- End Heading Article -->
-    
+
         <!-- Content -->
         <div class="lg:-mx-6 py-10 flex flex-col items-center">
           <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-6.jpg" alt="" />
-    
+
           <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
             <p class="mt-6 text-gray-500 dark:text-gray-400">
-                Dalam era kecerdasan buatan (AI), pertanyaan tentang masa depan peran programmer menjadi semakin relevan. Artikel ini bertujuan untuk menjelajahi secara mendalam dampak AI di dunia pemrograman, mengidentifikasi tantangan dan peluang yang dihadapi oleh para programmer dalam menghadapi perkembangan teknologi ini. AI telah mengubah lanskap pemrograman dengan memperkenalkan kemampuan untuk otomatisasi tugas-tugas yang sebelumnya membutuhkan intervensi manusia, seperti pemrosesan data, analisis prediktif, dan pengambilan keputusan. <br>
+              Dalam era kecerdasan buatan (AI), pertanyaan tentang masa depan peran programmer menjadi semakin relevan. Artikel ini bertujuan untuk menjelajahi secara mendalam dampak AI di dunia pemrograman, mengidentifikasi tantangan dan
+              peluang yang dihadapi oleh para programmer dalam menghadapi perkembangan teknologi ini. AI telah mengubah lanskap pemrograman dengan memperkenalkan kemampuan untuk otomatisasi tugas-tugas yang sebelumnya membutuhkan intervensi
+              manusia, seperti pemrosesan data, analisis prediktif, dan pengambilan keputusan. <br />
 
-               <br> Meskipun begitu, keberadaan AI tidak mengurangi kebutuhan akan kehadiran dan kontribusi para programmer. Sebaliknya, peran dan keahlian programmer tetap sangat penting dalam mengelola, mengoptimalkan, dan mengembangkan sistem AI. Programmer masih diperlukan untuk merancang, mengimplementasikan, dan memelihara algoritma serta model AI, serta untuk menerapkan solusi khusus dalam konteks bisnis dan teknologi. <br>
-                
-               <br> Adaptasi dan pengembangan keterampilan menjadi kunci bagi para programmer dalam menghadapi perubahan ini. Mereka perlu terus meningkatkan keahlian teknis mereka, memperluas pengetahuan mereka tentang AI dan teknologi terkait, serta mengasah keterampilan kritis dalam pemecahan masalah dan inovasi. Selain itu, programmer juga diharapkan untuk mengembangkan keterampilan kolaboratif dan komunikatif, karena kerja sama antara manusia dan mesin menjadi semakin penting dalam menghadapi tantangan yang kompleks dan beragam. <br>
-                
-               <br> Diskusi dalam artikel ini menekankan pentingnya kolaborasi antara manusia dan mesin dalam membentuk masa depan yang produktif di dunia pemrograman. Dengan memahami peran baru yang dihadapi oleh programmer dalam konteks AI, dan dengan mempersiapkan diri untuk menghadapi perubahan ini dengan sikap terbuka dan adaptif, para programmer dapat memainkan peran yang signifikan dalam memanfaatkan potensi penuh teknologi AI untuk kemajuan dan inovasi dalam berbagai bidang.
+              <br />
+              Meskipun begitu, keberadaan AI tidak mengurangi kebutuhan akan kehadiran dan kontribusi para programmer. Sebaliknya, peran dan keahlian programmer tetap sangat penting dalam mengelola, mengoptimalkan, dan mengembangkan sistem
+              AI. Programmer masih diperlukan untuk merancang, mengimplementasikan, dan memelihara algoritma serta model AI, serta untuk menerapkan solusi khusus dalam konteks bisnis dan teknologi. <br />
+
+              <br />
+              Adaptasi dan pengembangan keterampilan menjadi kunci bagi para programmer dalam menghadapi perubahan ini. Mereka perlu terus meningkatkan keahlian teknis mereka, memperluas pengetahuan mereka tentang AI dan teknologi terkait,
+              serta mengasah keterampilan kritis dalam pemecahan masalah dan inovasi. Selain itu, programmer juga diharapkan untuk mengembangkan keterampilan kolaboratif dan komunikatif, karena kerja sama antara manusia dan mesin menjadi
+              semakin penting dalam menghadapi tantangan yang kompleks dan beragam. <br />
+
+              <br />
+              Diskusi dalam artikel ini menekankan pentingnya kolaborasi antara manusia dan mesin dalam membentuk masa depan yang produktif di dunia pemrograman. Dengan memahami peran baru yang dihadapi oleh programmer dalam konteks AI, dan
+              dengan mempersiapkan diri untuk menghadapi perubahan ini dengan sikap terbuka dan adaptif, para programmer dapat memainkan peran yang signifikan dalam memanfaatkan potensi penuh teknologi AI untuk kemajuan dan inovasi dalam
+              berbagai bidang.
             </p>
           </div>
         </div>
         <!-- End Content -->
-    
-        <!-- Button-->
-        <div class="flex justify-center lg:justify-start mb-8">
-          <button
-            x-data="{ goBack: function() { window.history.back(); } }"
-            @click="goBack"
-            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-            </svg>
-            <span> Go back</span>
-          </button>
-        </div>
-        <!-- End Button -->
+
       </div>
     </section>
-    
   </body>
 </html>

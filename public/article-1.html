@@ -11,33 +11,48 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
   </head>
   <body>
-
-    <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
+    <section class="bg-gray-900 dark:bg-white flex justify-center items-center min-h-screen">
       <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+        
+        <!-- Button -->
+        <div class="flex lg:justify-start mb-8 py-8">
+          <button
+            title="left arrow"
+            class="p-2 text-gray-700 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-800 dark:text-gray-200 dark:hover:bg-gray-100 hover:bg-gray-800"
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 25 25" stroke="currentColor" stroke-width="1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- End Button-->
 
         <!-- Heading Article -->
         <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
-          <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Melintasi Jalan Jalaluddin Rumi: Eksplorasi Kehidupan dan Puisi Sang Sufi</h1>
+          <h1 class="text-2xl font-semibold text-gray-800 lg:text-3xl lg:w-96 mx-auto">Melintasi Jalan Jalaluddin Rumi: Eksplorasi Kehidupan dan Puisi Sang Sufi</h1>
         </div>
         <!-- End Heading Article -->
-    
+
         <!-- Content -->
         <div class="lg:-mx-6 py-10 flex flex-col items-center">
           <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-1.jpeg" alt="" />
-    
+
           <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
-            <p class="mt-6 text-gray-500 dark:text-gray-400">
+            <p class="mt-6 text-gray-400 dark:text-gray-500">
               Jalaluddin Rumi, seorang penyair Sufi yang meninggalkan warisan puisi puitis yang mempesona. Lahir di Persia pada abad ke-13 dan kemudian menetap di Konya, Turki, Rumi dikenal karena karyanya yang memancarkan pesan cinta,
               kebijaksanaan, dan spiritualitas yang mendalam. Salah satu karyanya yang paling terkenal adalah "Masnavi," sebuah karya epik yang menggambarkan perjalanan spiritual manusia dalam mencari kesatuan dengan Tuhan. <br />
-    
+
               <br />Rumi bukan hanya seorang penyair, tetapi juga seorang sufi yang mendalami ajaran tasawuf, cabang mistis Islam yang menekankan pengalaman langsung dan personal dalam mencapai pemahaman spiritual. Puisi-puisi Rumi
               mengandung makna-makna yang dalam dan mengajak pembaca untuk mengeksplorasi dimensi-dimensi batiniah kehidupan. Dengan gaya bahasa yang metaforis dan simbolis, Rumi menyampaikan pesan-pesan filosofis yang memukau tentang
               hakikat cinta, kebijaksanaan, dan pencarian jalan menuju kesatuan dengan Sang Pencipta. <br />
-    
+
               <br />
               Melalui puisi-puisinya, Rumi mengajak pembaca untuk merenungkan makna cinta sejati yang melampaui batas-batas fisik dan materi. Baginya, cinta adalah kekuatan yang menghubungkan manusia dengan Tuhan dan sesama manusia.
               Karya-karya Rumi mencerminkan perjalanan spiritual menuju kesatuan dengan Tuhan, di mana pencarian kebijaksanaan dan pemahaman batiniah menjadi fokus utama. <br />
-    
+
               <br />
               Warisan puisi Rumi terus menginspirasi jutaan orang di seluruh dunia. Pesan-pesannya yang mendalam tentang cinta, kebijaksanaan, dan pencarian spiritual telah menembus batas-batas budaya dan agama, mengajak setiap individu
               untuk merenungkan nilai-nilai universal dan menjalani perjalanan menuju pemahaman yang lebih dalam tentang kemanusiaan dan kesatuan dengan Tuhan.
@@ -45,23 +60,8 @@
           </div>
         </div>
         <!-- End Content -->
-    
-        <!-- Button -->
-        <div class="flex justify-center lg:justify-start mb-8">
-          <button
-            x-data="{ goBack: function() { window.history.back(); } }"
-            @click="goBack"
-            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-            </svg>
-            <span> Go back</span>
-          </button>
-        </div>
-        <!-- End Button -->
+
       </div>
     </section>
-    
   </body>
 </html>

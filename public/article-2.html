@@ -11,50 +11,60 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.x.x/dist/alpine.min.js" defer></script>
   </head>
   <body>
-
     <section class="bg-white dark:bg-gray-900 flex justify-center items-center min-h-screen">
       <div class="container px-6 py-10 mx-auto w-full lg:w-3/4">
+        
+        <!-- Button -->
+        <div class="flex lg:justify-start mb-8 py-8">
+          <button
+            title="left arrow"
+            class="p-2 text-gray-800 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 hover:bg-gray-100"
+            x-data="{ goBack: function() { window.history.back(); } }"
+            @click="goBack"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 25 25" stroke="currentColor" stroke-width="1">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- End Button-->
 
         <!-- Heading Article -->
         <div class="lg:w-1/2 lg:px-6 mx-auto text-left">
           <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96 mx-auto">Melihat Ke Tahun Politik: Transformasi dan Tantangan Menuju Masa Depan</h1>
         </div>
         <!-- End Heading Article -->
-    
+
         <!-- Content -->
         <div class="lg:-mx-6 py-10 flex flex-col items-center">
           <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]" src="img/article-2.jpeg" alt="" />
-    
+
           <div class="mt-8 lg:w-1/2 lg:px-6 text-left">
             <p class="mt-6 text-gray-500 dark:text-gray-400">
-                Tahun politik mencerminkan dinamika yang signifikan dalam peta kebijakan dan pemerintahan suatu negara. Pemilihan umum, restrukturisasi kebijakan, serta perubahan kepemimpinan menjadi peristiwa krusial yang tidak hanya berdampak pada arah kebijakan publik, tetapi juga menentukan wajah politik dan sosial negara tersebut untuk masa yang akan datang. Tidak jarang, tahun politik diwarnai oleh beragam isu sensitif yang memicu ketegangan di antara berbagai kelompok masyarakat, sehingga menciptakan polarisasi dan perselisihan yang memengaruhi dinamika politik domestik. <br>
+              Tahun politik mencerminkan dinamika yang signifikan dalam peta kebijakan dan pemerintahan suatu negara. Pemilihan umum, restrukturisasi kebijakan, serta perubahan kepemimpinan menjadi peristiwa krusial yang tidak hanya
+              berdampak pada arah kebijakan publik, tetapi juga menentukan wajah politik dan sosial negara tersebut untuk masa yang akan datang. Tidak jarang, tahun politik diwarnai oleh beragam isu sensitif yang memicu ketegangan di antara
+              berbagai kelompok masyarakat, sehingga menciptakan polarisasi dan perselisihan yang memengaruhi dinamika politik domestik. <br />
 
-               <br> Dalam suasana politik yang penuh tantangan, tahun-tahun politik sering kali menjadi panggung bagi pertarungan ideologi dan kepentingan politik yang beragam. Berbagai keputusan strategis yang diambil oleh pemimpin politik dan partai politik memengaruhi arah kebijakan negara serta pandangan masyarakat terhadap isu-isu penting. Selain itu, proses politik seperti kampanye pemilihan umum, debat publik, dan pemungutan suara memperlihatkan kemampuan masyarakat untuk berpartisipasi dalam pembentukan keputusan politik yang akan memengaruhi nasib bangsa dalam jangka panjang. <br>
-                
-               <br> Namun demikian, di balik beragam tantangan dan ketegangan yang dihadapi, tahun politik juga memberikan peluang bagi perubahan dan transformasi yang berarti. Melalui proses demokratisasi yang dijalankan dalam pemilihan umum dan proses politik lainnya, masyarakat memiliki kesempatan untuk mengartikulasikan aspirasi dan harapan mereka terhadap masa depan negara. Kesadaran politik yang meningkat di kalangan masyarakat juga memperkuat tuntutan akan akuntabilitas dan transparansi dalam proses pembuatan kebijakan, sehingga mendorong terciptanya lingkungan politik yang lebih sehat dan berkelanjutan. <br>
-                
-               <br> Dengan demikian, meskipun tahun politik sering kali diwarnai oleh ketegangan dan pertarungan kepentingan, namun hal tersebut juga menjadi momen penting dalam pembentukan masa depan politik dan sosial suatu negara. Keputusan-keputusan politik yang diambil selama tahun politik tidak hanya berdampak pada periode tersebut, tetapi juga akan membentuk landasan bagi perkembangan politik dan sosial yang berkelanjutan dalam jangka panjang. Oleh karena itu, penting bagi semua pihak untuk terlibat secara aktif dalam proses politik dan bertanggung jawab dalam menentukan arah kebijakan negara demi terciptanya masa depan yang lebih baik bagi semua pihak.
+              <br />
+              Dalam suasana politik yang penuh tantangan, tahun-tahun politik sering kali menjadi panggung bagi pertarungan ideologi dan kepentingan politik yang beragam. Berbagai keputusan strategis yang diambil oleh pemimpin politik dan
+              partai politik memengaruhi arah kebijakan negara serta pandangan masyarakat terhadap isu-isu penting. Selain itu, proses politik seperti kampanye pemilihan umum, debat publik, dan pemungutan suara memperlihatkan kemampuan
+              masyarakat untuk berpartisipasi dalam pembentukan keputusan politik yang akan memengaruhi nasib bangsa dalam jangka panjang. <br />
+
+              <br />
+              Namun demikian, di balik beragam tantangan dan ketegangan yang dihadapi, tahun politik juga memberikan peluang bagi perubahan dan transformasi yang berarti. Melalui proses demokratisasi yang dijalankan dalam pemilihan umum dan
+              proses politik lainnya, masyarakat memiliki kesempatan untuk mengartikulasikan aspirasi dan harapan mereka terhadap masa depan negara. Kesadaran politik yang meningkat di kalangan masyarakat juga memperkuat tuntutan akan
+              akuntabilitas dan transparansi dalam proses pembuatan kebijakan, sehingga mendorong terciptanya lingkungan politik yang lebih sehat dan berkelanjutan. <br />
+
+              <br />
+              Dengan demikian, meskipun tahun politik sering kali diwarnai oleh ketegangan dan pertarungan kepentingan, namun hal tersebut juga menjadi momen penting dalam pembentukan masa depan politik dan sosial suatu negara.
+              Keputusan-keputusan politik yang diambil selama tahun politik tidak hanya berdampak pada periode tersebut, tetapi juga akan membentuk landasan bagi perkembangan politik dan sosial yang berkelanjutan dalam jangka panjang. Oleh
+              karena itu, penting bagi semua pihak untuk terlibat secara aktif dalam proses politik dan bertanggung jawab dalam menentukan arah kebijakan negara demi terciptanya masa depan yang lebih baik bagi semua pihak.
             </p>
           </div>
         </div>
         <!-- End Content -->
-    
-        <!-- Button -->
-        <div class="flex justify-center lg:justify-start mb-8">
-          <button
-            x-data="{ goBack: function() { window.history.back(); } }"
-            @click="goBack"
-            class="flex items-center justify-center px-5 py-2 text-sm text-gray-700 transition-colors duration-200 bg-white border rounded-lg gap-x-2 dark:bg-gray-900 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-gray-200 hover:text-black"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 28 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 rtl:rotate-180">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
-            </svg>
-            <span> Go back</span>
-          </button>
-        </div>
-        <!-- End Button -->
       </div>
     </section>
-    
   </body>
 </html>
