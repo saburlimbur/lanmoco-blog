@@ -121,3 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+document.getElementById('btnContact').addEventListener('click', function () {
+  window.alert('Terima Kasih');
+});
