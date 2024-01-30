@@ -24,8 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const contact = document.getElementById('contact');
 
   about.addEventListener('about', handleAboutClick);
-  article.addEventListener('click', handleArticleClick);
-  contact.addEventListener('click', handleContactClick);
+  article.addEventListener('article', handleArticleClick);
+  contact.addEventListener('contact', handleContactClick);
 });
 
 // Bagian untuk filter artikel
