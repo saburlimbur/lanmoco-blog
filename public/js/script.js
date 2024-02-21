@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-document.getElementById('btnContact').addEventListener('click', function () {
-  window.alert('Terima Kasih');
+const homeLink = document.getElementById('homePage');
+
+window.addEventListener('load', function (event) {
+  alert('Untuk mendapatkan tampilan yang menarik, silakan aktifkan Mode Malam saat membaca.');
 });

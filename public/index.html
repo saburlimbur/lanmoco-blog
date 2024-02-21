@@ -15,8 +15,9 @@
     <nav x-data="{ isOpen: false }" class="relative bg-white shadow dark:bg-gray-800">
       <div class="container px-6 py-8 mx-auto md:flex md:justify-between md:items-center">
         <div class="flex items-center justify-between">
-          <a href="#">
-            <img class="w-auto h-6 sm:h-7" src="img/logo.svg" alt="" />
+          <a href="index.html" class="flex items-center">
+            <img class="w-auto h-6 sm:h-7 mx-2" src="img/logo.svg" alt="" />
+            <span class="text-7xl font-semibold text-gray-800 capitalize lg:text-7xl dark:text-white">Lanmoco Blog</span>
           </a>
 
           <!-- Mobile menu button -->
@@ -72,10 +73,10 @@
     <!-- Article Section -->
 
     <section class="bg-white dark:bg-gray-900">
-      <div class="container px-6 py-10">
+      <div class="container mx-auto px-6 py-10">
         <div class="text-center p-10 m-10" id="about">
           <h1 class="text-7xl font-semibold text-gray-800 capitalize lg:text-7xl dark:text-white">Lanmoco Blog</h1>
-          <p class="w-96 my-6 text-gray-500">
+          <p class="w-4/5 my-6 mx-auto text-gray-500">
             Di tengah keberagaman literasi, terdapat sebuah pengetahuan Blog sederhana yang dikenal dengan nama 'Lanmoco' dalam bahasa Jawa. Tempat ini bukan sekadar perpustakaan, melainkan sebuah sumber pengetahuan yang sarat makna, di
             mana ilmu dan inspirasi berkumpul dalam harmoni yang menginspirasi dan mendalam. Di Lanmoco, para pencinta literasi menemukan keindahan tak terhingga dalam memperdalam pemahaman akan beragam topik, serta menemukan pesona dalam
             setiap halaman yang mereka jelajahi..
@@ -86,8 +87,8 @@
         <div class="text-xs font-bold text-gray-800 dark:text-gray-200 mt-4">
           FILTER BY TAG :
           <span>
-            <a href="#" id="spiritual-filter" class="hover:text-blue-400"> SPIRITUAL </a> / <a href="#" id="politik-filter" class="hover:text-blue-400"> POLITIK </a> /
-            <a href="#" id="teknologi-filter" class="hover:text-blue-400"> TEKNOLOGI </a> / <a href="#" id="musik-filter" class="hover:text-blue-400"> MUSIK </a> /
+            <a href="index.html" id="all-article" class="hover:text-blue-400">ALL</a> / <a href="#" id="spiritual-filter" class="hover:text-blue-400"> SPIRITUAL </a> /
+            <a href="#" id="politik-filter" class="hover:text-blue-400"> POLITIK </a> / <a href="#" id="teknologi-filter" class="hover:text-blue-400"> TEKNOLOGI </a> / <a href="#" id="musik-filter" class="hover:text-blue-400"> MUSIK </a> /
             <a href="#" id="photography-filter" class="hover:text-blue-400"> PHOTOGRAPHY </a> / <a href="#" id="olahraga-filter" class="hover:text-blue-400"> OLAHRAGA </a> /
             <a href="#" id="travel-filter" class="hover:text-blue-400"> TRAVEL </a>
           </span>
@@ -564,9 +565,47 @@
 
               <a href="article-12.html" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400 text-sm font-semibold">Read more</a>
             </div>
-
-            <!-- End Article 12-->
           </div>
+          <!-- End Article 12-->
+
+          <!-- Article 13 -->
+          <div id="spiritual-articles" class="spiritual-article">
+            <div>
+              <div class="relative">
+                <img class="object-cover object-center w-full h-64 rounded-lg lg:h-80" src="img/article-13.jpeg" alt="" />
+
+                <div class="absolute bottom-0 flex p-3 bg-white dark:bg-gray-900">
+                  <img
+                    class="object-cover object-center w-10 h-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1609010697446-11f2155278f0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+
+                  <div class="mx-4">
+                    <h1 class="text-sm font-bold text-gray-700 dark:text-gray-200">Alif Dwi</h1>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">Poetry</p>
+                  </div>
+                </div>
+              </div>
+
+              <h1 class="mt-6 text-xl font-semibold text-gray-800 dark:text-white">Polemik Eksil 1965: Eksil Korban Peristiwa 1965 dan Kaitannya dengan Status Kewarganegaraan yang Tak Diakui</h1>
+              <div class="text-left">
+                <p class="mt-2 text-sm font-medium text-gray-500 dark:text-gray-400">Februari 21 , 2024</p>
+                <span class="text-xs font-bold text-gray-800 dark:text-gray-200">TAG :</span>
+                <h3 class="inline-block text-xs font-bold text-gray-800 dark:text-gray-200 mt-4 hover:text-blue-400 cursor-pointer">POLITIK</h3>
+              </div>
+
+              <hr class="w-32 my-6 text-blue-500" />
+
+              <p class="text-xs text-gray-500 dark:text-gray-400">
+                Selama bertahun-tahun, para eksil politik menghadapi berbagai tantangan di negara asing tempat mereka tinggal. Meskipun beberapa di antara mereka mungkin berhasil menetap dan mengintegrasikan diri di negara baru mereka,
+                banyak juga yang terus merindukan tanah air mereka dan mengharapkan perubahan politik di Indonesia yang memungkinkan mereka untuk kembali. Pada masa-masa berikutnya.
+              </p>
+
+              <a href="article-13.html" class="inline-block mt-4 text-blue-500 underline hover:text-blue-400 text-sm font-semibold">Read more</a>
+            </div>
+          </div>
+          <!-- End Article 13 -->
         </div>
       </div>
     </section>
@@ -667,6 +706,7 @@
                     type="text"
                     placeholder="John Doe"
                     class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    required
                   />
                 </div>
 
@@ -676,6 +716,7 @@
                     type="email"
                     placeholder="johndoe@example.com"
                     class="block w-full px-5 py-3 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                    required
                   />
                 </div>
 
@@ -684,6 +725,7 @@
                   <textarea
                     class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                     placeholder="Message"
+                    required
                   ></textarea>
                 </div>
 
@@ -708,7 +750,7 @@
       <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col items-center text-center">
           <div class="flex flex-wrap justify-center mt-6 -mx-4">
-            <a href="index.html" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Home"> Home </a>
+            <a href="index.html" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="Home" id="homePage"> Home </a>
 
             <a href="index.html" class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400" aria-label="About"> About </a>
 
